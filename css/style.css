@@ -15,38 +15,56 @@ body, p{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    margin:8px 0;
 }
 
-h1,h2{
+h1{
     /* Title/Section */
     font-weight: 700;
     font-size: 22px;
-    line-height: 26px;
+    margin:16px 0;
 }
 
-h3,span{
+h2{
+    /* Title/Section */
+    font-weight: 700;
+    font-size: 22px;
+    margin:8px 0;
+}
+
+h3{
     /*Card/Title*/
     font-weight: 700;
     font-size: 16px;
-    line-height: 19px;
-    margin-top:8px;
+    margin:8px 0;
 }
 
-h4{
-    /*filterText */
+h4,span{
+    /*Afficher/Filter texte */
     font-weight: 700;
     font-size: 18px;
-    line-height: 21px;
-    /*for mobile 16px*/
+    margin:10px 0;
+}
+
+h5{
+    /*filters buttons Text */
+    font-weight: 700;
+    font-size: 17px;
+    margin:8px 0;
+    /*for mobile 11px*/
+}
+
+h6{
+    /*Prices Text */
+    font-weight: 400;
+    font-size: 14px;
+    margin:8px 0;
 }
 
 /*tous les liens*/
 a{
     color:black;
     text-decoration:none;
-    margin:0px;
-    padding:0px;
 }
 
 a:hover{
@@ -73,44 +91,47 @@ body{
 .nav_content{
     display:flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top:40px;
+    align-items: flex-end;
+    padding-left:40px;
+    max-width: 1360px;
+    margin:auto;
 }
 .nav_img{
     width: 61px;
 }
 nav ul{
     display:flex;
-    justify-content: space-between;
-    width:20%;
+    justify-content:right;
+    width:30%;
 }
 
 nav li{
-    width: 50%;
+    list-style-type: none;
 }
 
 .nav__link{
-    display:inline;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     margin:0;
-    text-align: right;
+    text-align: center;
 }
 
 /*links*/
 li a{
-   /* display: block;*/
     color:black;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 38px;
     text-decoration:none;
-    width: 100%;
-    padding:38px 20px;
+    text-align: right;
+    /*padding:20px 0;*/
 }
 
 li a:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
-}
-
-a:hover{
-    color:#0065FC;
 }
 
 ul{
@@ -125,24 +146,17 @@ header{
 .header_content{
     text-align: left;
     margin-top: 63px;
-}
-
-.header_icon{
-    background-color: #f2f2f2;
-    border-radius: 16px 0 0 16px;
-    width:16px;
-    border: 1px solid #f2f2f2;
-    padding:16px 18px 15px 18px;
-}
-
-.header_icon_color{
-    color:#0065FC;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 40px;
+    max-width: 1320px;
 }
 
 /*filtres de recherche*/
 .header_filtres{
     display:flex;
     margin-top:30px;
+    align-items: center;
 }
 
 .header_filter_txt{
@@ -156,6 +170,10 @@ header{
     color:black;
 }
 
+.header_icon_color{
+    color:#0065FC;
+}
+
 .header_filtres_button{
     display: flex;
     justify-content: space-between;
@@ -163,7 +181,7 @@ header{
     border-radius:25px;
     border: 2px solid #D9D9D9;
     width: fit-content;
-    padding:10px;
+    padding:4px 16px;
     margin-left: 30px;
 }
 
@@ -178,16 +196,29 @@ header{
 /*CTN du site => barre de recherche*/
 .ctn{
     display:flex;
+    justify-content: flex-start;
+}
+
+.header_icon{
+    background-color: #f2f2f2;
+    border-radius:16px 0 0 16px;
+    /*width:24px;
+    height:16px;*/
+    padding:16px;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    justify-content: center;
+}
+
+i.header_icon{
+    align-self: center;
 }
 
 .ctn_research{
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 18px;
     padding-left:20px;
-    width:18%;
 }
 
 input{
@@ -198,7 +229,6 @@ input{
 .btn-search{
     background-color: #0065FC;
     color:white;
-    border-radius:0 16px 16px 0px;
     border:none;
     font-family: 'Raleway';
     font-style: normal;
@@ -206,6 +236,7 @@ input{
     font-size: 16px;
     line-height: 19px;
     padding:0 16px;
+    border-radius:0 16px 16px 0;
 }
 
 
@@ -251,46 +282,37 @@ section{
 .container{
     background-color: #F2F2F2;
     border-radius:20px;
-    padding:30px 35px 0 35px;
+    padding:30px 40px;
     width:62%;
-    text-align: left;
-}
-
-.container h2 {
-    line-height: 20px;
-    /*margin-left:20px;*/
-    margin-bottom: 25px;
-}
-
- .container h4{
-   /* margin-left:20px;*/
-    margin-top:35px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .container_card_block{
     display:flex;
     justify-content: space-between;
-    margin-bottom: 30px;
-    margin-left:auto;
-    margin-right:auto;
+    flex-wrap: wrap;
 }
 
-/*.container_card_block a{
-    width:28.5%;
-    margin:auto;
-}*/
+.container_card_block a{
+    width:30%;
+}
 
 .container_card{
     background-color: white;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     border-radius:15px;
-    width:246px;
-    /*width:100%;*/
+    max-width:246px;
     height:199px;
     padding:5px;
     margin: auto;
     display:flex;
     flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    overflow: hidden;
 }
 
 
@@ -299,6 +321,8 @@ section{
     width:100%;
     height: 60%;
     object-fit: cover;
+    /*transform: scale(1.2);*/
+
 }
 
 .container_card_ctn{
@@ -306,24 +330,12 @@ section{
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    padding:10px 10px 0px 10px;
+    padding:0 10px;
 }
 
 .container_card_txt{
     text-align: left;
     overflow-wrap: normal;
-   /* margin-bottom: auto;*/
-}
-
-.container_card_txt p{
-    font-size: 14px;
-    margin: 0 0 8px 0 ;
-}
-
-.container_card_txt h3{
-    margin: 0 0 4px 0 ;
-    overflow-wrap: break-word;
-    display:block;
 }
 
 .container_card_icon{
@@ -341,7 +353,7 @@ section{
     padding:30px 40px 0 40px;
     text-align: left;
     width:24%;
-    justify-content: center;
+    justify-content: flex-start;
     display:flex;
     flex-direction: column;
 }
@@ -377,10 +389,6 @@ section{
 .populaires_card_txt{
     text-align: left;
     margin-bottom: auto;
-}
-
-.populaires_card_txt p{
-    line-height: 0;
 }
 
 /*activités à marseille*/
@@ -433,24 +441,20 @@ section{
 .footer_col{
     width:35%;
     text-align: left;
-
 }
 
 .footer_col a{
     display: block;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
-.footer_col h3{
-    font-size: 18px;
+.footer_col a:hover{
+    color: #0065FC;
 }
 
 /*sur les écrans des tablettes*/
 @media screen and (min-width: 778px) and (max-width: 992px)
 {
-    h3{
-        font-size: 16px;
-    }
 
     .page{
         padding: 0 60px;
@@ -462,6 +466,10 @@ section{
         width:30%;
     }
 
+    /*li a{
+        padding: 38px 10px;
+    }*/
+
     /*header*/
     /*filtres de recherche*/
     .header_filter_txt{
@@ -471,7 +479,6 @@ section{
     .header_filtres_button{
         margin-left: 20px;
         justify-content: flex-start;
-        padding:12px;
     }
 
     /*CTN du site => barre de recherche*/
@@ -488,17 +495,15 @@ section{
     .container{
         width:auto;
         text-align: left;
-        padding:30px;
         margin-bottom: 40px;
     }
 
-    .container h4{
-        margin-left:0;
-    }
-    
-
     .container_card_block{
         margin-bottom:0px;
+    }
+
+    .container_card_block a{
+        width:32%;
     }
    
     .container_card{
@@ -531,16 +536,6 @@ section{
         padding: 0 8px;
     }
 
-    .populaires_card_ctn h3{
-        margin-bottom:8px;
-    }
-
-    .populaires_card_ctn p{
-        font-size: 13px;
-        margin-bottom: auto;
-        margin-top:0px;
-    }
-
     /*activités à marseille*/
     .activites_card{
         height:267px;
@@ -553,18 +548,6 @@ section{
     .acitivites_card_img{
         height: 78%;
     }
-
-    .acitivites_card_txt h3{
-        width:100%;
-        align-self: center;
-        line-height: 15px;
-        margin: 10px 0;
-    }
-
-    .populaires_card_txt p{
-        line-height: 16px;
-        overflow-wrap: normal;
-    }
    
 }
 
@@ -572,8 +555,9 @@ section{
  @media screen and (max-width: 768px)
  {
     /*Typography*/
-    h3{
-        margin-bottom:10px;
+
+    h5{
+        font-size: 11px;
     }
 
     span{
@@ -694,10 +678,6 @@ section{
         width:88%;
     }
 
-    .container h2{
-        margin-left: 0px;
-    }
-
     .container_card_block{
         flex-direction: column;
         margin-bottom:0px;
@@ -737,10 +717,6 @@ section{
     .populaires_card_title{
         width:88%;
         margin: auto;
-    }
-
-    .populaires_card_txt p{
-        font-size:14px ;
     }
 
     /*activités à marseille*/
