@@ -92,9 +92,8 @@ body{
     display:flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-left:40px;
-    max-width: 1360px;
     margin:auto;
+    width:100%;
 }
 .nav_img{
     width: 61px;
@@ -121,11 +120,12 @@ nav li{
 /*links*/
 li a{
     color:black;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 38px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 39px;
     text-decoration:none;
     text-align: right;
+    cursor:default;
     /*padding:20px 0;*/
 }
 
@@ -145,11 +145,7 @@ header{
 }
 .header_content{
     text-align: left;
-    margin-top: 63px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 40px;
-    max-width: 1320px;
+    margin-top: 64px;
 }
 
 /*filtres de recherche*/
@@ -160,7 +156,7 @@ header{
 }
 
 .header_filter_txt{
-    margin-left:10px;
+    margin-left: 12px;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
@@ -176,13 +172,13 @@ header{
 
 .header_filtres_button{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-radius:25px;
     border: 2px solid #D9D9D9;
     width: fit-content;
     padding:4px 16px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .header_filtres_button:hover{
@@ -202,9 +198,7 @@ header{
 .header_icon{
     background-color: #f2f2f2;
     border-radius:16px 0 0 16px;
-    /*width:24px;
-    height:16px;*/
-    padding:16px;
+    padding:24px 16px;
     border: 1px solid #f2f2f2;
     display: flex;
     justify-content: center;
@@ -219,6 +213,7 @@ i.header_icon{
     font-weight: 700;
     font-size: 18px;
     padding-left:20px;
+    width:16%;
 }
 
 input{
@@ -234,14 +229,13 @@ input{
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 19px;
     padding:0 16px;
     border-radius:0 16px 16px 0;
 }
 
 
 .btn-search:hover{
-    background-color: #DEEBFF;
+    background-color: #1d76fb;
 }
 
 i.btn_search_icon{
@@ -311,7 +305,7 @@ section{
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-bottom: 30px;
+    margin: 15px 0;
     overflow: hidden;
 }
 
@@ -365,7 +359,7 @@ section{
     border-radius:15px;
     height:144px;
     padding:5px;
-    margin-bottom:25px;
+    margin:15px 0 30px 0;
 }
 
 .populaires_card_title{
@@ -401,10 +395,11 @@ section{
     display:flex;
     justify-content: space-between;
     width:100%;
+    margin-top:20px;
 }
 
 .activites a{
-    width:21%;
+    width:22%;
 }
 
 .activites_card{
@@ -435,12 +430,16 @@ section{
     background-color: #F2F2F2;
     padding:40px 70px;
     display:flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .footer_col{
-    width:35%;
+    width:30%;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .footer_col a{
@@ -466,9 +465,6 @@ section{
         width:30%;
     }
 
-    /*li a{
-        padding: 38px 10px;
-    }*/
 
     /*header*/
     /*filtres de recherche*/
@@ -477,7 +473,7 @@ section{
     }
 
     .header_filtres_button{
-        margin-left: 20px;
+        margin-left: 30px;
         justify-content: flex-start;
     }
 
@@ -495,11 +491,7 @@ section{
     .container{
         width:auto;
         text-align: left;
-        margin-bottom: 40px;
-    }
-
-    .container_card_block{
-        margin-bottom:0px;
+        margin-bottom: 50px;
     }
 
     .container_card_block a{
@@ -507,7 +499,7 @@ section{
     }
    
     .container_card{
-        margin: 0 20px 20px 0;
+        margin: 20px 20px 20px 0;
         display:flex;
         flex-direction: column;
     }
@@ -537,6 +529,9 @@ section{
     }
 
     /*activités à marseille*/
+    .activites{
+        margin-top: 30px;;
+    }
     .activites_card{
         height:267px;
     }
@@ -548,7 +543,11 @@ section{
     .acitivites_card_img{
         height: 78%;
     }
-   
+
+    /*footer de la page*/
+    .footer_content{
+        padding:40px 70px 60px 70px;
+    }
 }
 
 /*sur les écran des portables*/
@@ -586,34 +585,35 @@ section{
     /*filtres de recherche*/
     .header_filtres{
         flex-direction: column;
+        align-items: flex-start;
     }
     
     .header_filter_txt{
-        font-size: 0.8rem;
-        font-size: 11px;
+        margin-left: 8px;
     }
     .filter_block{
         height:50%;
         width:100%;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     
     .header_filtres_button{
-        margin: 10px 0px 10px 0;
+        margin: 10px 0;
         align-items: center;
-        width:42%;
+        width:38%;
         height:25px;
+        padding:10px 16px;
         justify-content: left;
     }
 
     /*nav*/
     .nav_content{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width:100%;
-    }
-
-    .nav_img{
-        margin-bottom: 50px;
+        margin-top: 20px;
     }
 
     nav ul{
@@ -635,13 +635,20 @@ section{
     }
 
     .nav__link{
-        margin:0px;
+        margin:15px 0px;
         text-align: center;
     } 
-
+    li a{
+        padding:0;
+    }
     li a:hover{
         color: #0065FC;
         border-top: 0px solid;
+        
+    }
+
+    .ctn{
+        margin-top: 30px;
     }
 
     i.btn_search_icon{
@@ -652,6 +659,10 @@ section{
     /*CTN du site => barre de recherche*/
     .ctn_research{
         width:100%;
+    }
+
+    .btn-search{
+        padding:0 4px;
     }
 
     /*advertising du site*/
@@ -683,9 +694,11 @@ section{
         margin-bottom:0px;
         align-items: center;
         margin: auto;
+        width:100%;
     }
     .container_card{
         width:auto;
+        max-width:none;
         margin-bottom: 20px;
         margin-left:auto;
         margin-right:auto;
@@ -703,10 +716,13 @@ section{
     /*cards les plus populaires*/
     .container_populaires{
         border-radius:0px;
-        padding:0px 0px 30px 0px;
+        padding:20px 0px 30px 0px;
         width:100%;
     }
 
+    .populaires_card_block{
+        margin-top:20px;
+    }
     .populaires_card{
         width:88%;
         margin: auto;
