@@ -8,10 +8,10 @@ color: #DEEBFF; blue
 color:#F2F2F2; grey
 */
 
-/*Typography*/
+/*Typography ************************* */
 body, p{
     /* Information */
-    font-family: 'Raleway';
+    font-family: 'Raleway',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -61,7 +61,7 @@ h6{
     margin:8px 0;
 }
 
-/*tous les liens*/
+/*tous les liens */
 a{
     color:black;
     text-decoration:none;
@@ -71,7 +71,7 @@ a:hover{
     color: black;
 }
 
-/*main divs for page design*/
+/*main divs for page design ************************* */
 body{
     margin: 0;
     background-color: #ffffff;
@@ -117,7 +117,7 @@ nav li{
     text-align: center;
 }
 
-/*links*/
+/*links */
 li a{
     color:black;
     padding-left: 30px;
@@ -189,7 +189,7 @@ header{
     display:flex;
 }
 
-/*CTN du site => barre de recherche*/
+/*CTN du site => barre de recherche  */
 .ctn{
     display:flex;
     justify-content: flex-start;
@@ -271,7 +271,7 @@ section{
 }
 
 
-/*cards d'hebergement*/
+/*cards d'hebergement  */
 
 .container{
     background-color: #F2F2F2;
@@ -281,7 +281,7 @@ section{
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .container_card_block{
@@ -292,6 +292,7 @@ section{
 
 .container_card_block a{
     width:30%;
+    margin-bottom: 15px;;
 }
 
 .container_card{
@@ -330,6 +331,7 @@ section{
 .container_card_txt{
     text-align: left;
     overflow-wrap: normal;
+    overflow: hidden;
 }
 
 .container_card_icon{
@@ -496,10 +498,11 @@ section{
 
     .container_card_block a{
         width:32%;
+        margin-bottom: 24px;
     }
    
     .container_card{
-        margin: 20px 20px 20px 0;
+        margin: 20px 20px 0 0;
         display:flex;
         flex-direction: column;
     }
@@ -550,7 +553,7 @@ section{
     }
 }
 
-/*sur les écran des portables*/
+/*sur les écrans des portables*/
  @media screen and (max-width: 768px)
  {
     /*Typography*/
@@ -672,7 +675,7 @@ section{
     }
 
     section{
-        flex-direction: column-reverse;
+        flex-direction: column-reverse; /* *********************** */
     }
 
     /*cards d'hebergement*/
